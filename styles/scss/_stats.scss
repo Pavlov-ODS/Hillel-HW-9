@@ -1,0 +1,44 @@
+@use 'variables' as *;
+
+.stats {
+  background-color: $blue;
+  width: 100%;
+  padding: 60px 0;
+  color: $white;
+  margin: 0;
+}
+
+.stats-inner {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.stat-item span {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.stat-item p {
+  font-size: 16px;
+}

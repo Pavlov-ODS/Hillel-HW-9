@@ -1,278 +1,267 @@
-/* 1. Переменные и сброс стилей */
-:root {
-    --blue: #223355;
-    --gray: #727272;
-    --light-gray: #E5E8EC;
-    --white: #FFFFFF;
-}
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
-    background-color: var(--light-gray);
-    margin: 0;
-    padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #000000;
+  background-color: #E5E8EC;
+  margin: 0;
+  padding: 0;
 }
 
-/* 2. Шапка (header) и навигация */
 header {
-    width: 100%;
-    margin: 0;
-    padding: 60px 0 0 0;
-    background: none;
+  width: 100%;
+  margin: 0;
+  padding: 60px 0 0 0;
+  background: none;
 }
 
 .header-inner {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: left;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
 }
 
 nav {
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    gap: 42px;
-    flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 42px;
+  flex-wrap: wrap;
 }
 
 nav a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 16px;
-    letter-spacing: 0.1em;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 0.1em;
 }
 
 nav a.active {
-    color: var(--blue);
+  color: #223355;
 }
 
-/* 3. Главный блок (hero) */
 .hero {
-    width: 100%;
-    padding: 60px 0;
-    background: none;
+  width: 100%;
+  padding: 60px 0;
+  background: none;
 }
+
 .hero-inner {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .hero h1 {
-    font-size: 48px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    margin-left: 0;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  margin-left: 0;
 }
 
 .hero p {
-    max-width: 540px;
-    margin: 0 0 60px 0;
-    color: var(--gray);
-    line-height: 26px;
+  max-width: 540px;
+  margin: 0 0 60px 0;
+  color: #727272;
+  line-height: 26px;
 }
 
 .hero button {
-    background-color: var(--blue);
-    color: var(--white);
-    border: none;
-    padding: 19px 41px;
-    font-size: 16px;
-    letter-spacing: 0.1em;
-    cursor: pointer;
-    margin-left: 0;
+  background-color: #223355;
+  color: #FFFFFF;
+  border: none;
+  padding: 19px 41px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  margin-left: 0;
 }
 
-/* 4. О себе (about) */
 .about {
-    padding: 60px 0;
-    text-align: center;
-    background: #fff;
+  padding: 60px 0;
+  text-align: center;
+  background: #fff;
 }
+
 .about-inner {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: center;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .about h2 {
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 50px;
 }
 
 .about p {
-    max-width: 540px;
-    margin: 0 auto;
-    color: var(--gray);
-    line-height: 26px;
+  max-width: 540px;
+  margin: 0 auto;
+  color: #727272;
+  line-height: 26px;
 }
 
-/* 5. Статистика (stats) */
 .stats {
-    background-color: #223355;
-    width: 100%;
-    padding: 60px 0;
-    color: var(--white);
-    margin: 0;
+  background-color: #223355;
+  width: 100%;
+  padding: 60px 0;
+  color: #FFFFFF;
+  margin: 0;
 }
+
 .stats-inner {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .stats-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 30px;
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .stat-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .stat-item img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .stat-item span {
-    font-size: 21px;
-    font-weight: 500;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .stat-item p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
-/* 6. Работа (work) и видео */
 .work {
-    padding: 60px 0;
-    text-align: center;
-    background: none;
+  padding: 60px 0;
+  text-align: center;
+  background: none;
 }
+
 .work-inner {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
-    text-align: center;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .work h2 {
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 50px;
 }
 
 .work p {
-    max-width: 540px;
-    margin: 0 auto 57px;
-    color: var(--gray);
-    line-height: 26px;
+  max-width: 540px;
+  margin: 0 auto 57px;
+  color: #727272;
+  line-height: 26px;
 }
 
 .video-container {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .video-container iframe {
-    width: 1110px;
-    height: 600px;
-    max-width: 100%;
+  width: 1110px;
+  height: 600px;
+  max-width: 100%;
 }
 
-/* 7. Футер (footer) */
 footer {
-    background-color: #223355;
-    width: 100%;
-    padding: 40px 0 0 0;
-    margin: 0;
-}
-.footer-content {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
-    color: var(--white);
-    text-align: left;
-}
-.copyright {
-    background: none;
-    margin: 0;
-    padding: 0;
-}
-.copyright-content {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px 20px 20px;
-    color: var(--white);
-    text-align: left;
-    font-size: 13px;
-}
-.copyright-content p {
-    text-align: left;
+  background-color: #223355;
+  width: 100%;
+  padding: 40px 0 0 0;
+  margin: 0;
 }
 
 .footer-content {
-    max-width: 1110px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #FFFFFF;
+  text-align: left;
+}
+
+.copyright {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.copyright-content {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  color: #FFFFFF;
+  text-align: left;
+  font-size: 13px;
+}
+
+.copyright-content p {
+  text-align: left;
 }
 
 .footer-content h2 {
-    color: var(--white);
-    font-size: 21px;
-    font-weight: 500;
-    margin-bottom: 20px;
-    text-align: left;
+  color: #FFFFFF;
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .footer-content p {
-    color: var(--white);
-    font-size: 13px;
-    text-align: left;
+  color: #FFFFFF;
+  font-size: 13px;
+  text-align: left;
 }
 
-/* 8. Адаптивные стили (media queries) */
 @media (max-width: 1200px) {
-    .stats-container {
-        grid-template-columns: repeat(3, 1fr);
-        padding: 0 20px;
-    }
+  .stats-container {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px;
+  }
 }
 @media (max-width: 900px) {
-    .stats-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 @media (max-width: 600px) {
-    .stats-container {
-        grid-template-columns: 1fr;
-    }
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
 }
+
+/*# sourceMappingURL=main.css.map */

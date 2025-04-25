@@ -1,0 +1,42 @@
+@use 'variables' as *;
+
+.hero {
+  width: 100%;
+  padding: 60px 0;
+  background: none;
+}
+
+.hero-inner {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  margin-left: 0;
+}
+
+.hero p {
+  max-width: 540px;
+  margin: 0 0 60px 0;
+  color: $gray;
+  line-height: 26px;
+}
+
+.hero button {
+  background-color: $blue;
+  color: $white;
+  border: none;
+  padding: 19px 41px;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  margin-left: 0;
+}
